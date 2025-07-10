@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Cachoeiro de Itapemirim</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: -300px;
+            width: 350px;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.01);
+            backdrop-filter: blur(5px);
+            transition: left 0.3s ease;
+            z-index: 1000;
+            border-right: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .sidebar.active {
+            left: 0;
+        }
+
+        .sidebar-header {
+            text-align: center;
+            padding: 15px 9px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            opacity: 0;
+            transform: translateX(-20px);
+            transition: all 0.3s ease 0.1s;
+        }
+
+        .sidebar.active .sidebar-header {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .logo {
+            width: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+        }
+
+        .city-name {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .city-subtitle {
+            color: rgba(255,255,255,0.8);
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            color: #4fc3f7;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 20px 20px 10px;
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0;
+            transform: translateX(-20px);
+            transition: all 0.3s ease 0.2s;
+        }
+
+        .sidebar.active .section-title {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .section-title i {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        .menu-container {
+            max-height: 400px;
+            overflow-y: auto;
+            padding-right: 5px;
+            margin: 0 20px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.1);
+            opacity: 0;
+            transform: translateX(-20px);
+            transition: all 0.3s ease 0.3s;
+        }
+
+        .sidebar.active .menu-container {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .menu-container::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .menu-container::-webkit-scrollbar-track {
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+        }
+
+        .menu-container::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, #ff6b9d, #9c27b0);
+            border-radius: 10px;
+        }
+
+        .menu-container::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, #ff8fb3, #b347d1);
+        }
+
+        .menu-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu-item {
+            padding: 5px 0px;;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-left: 3px solid transparent;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+        }
+
+        .menu-item:hover {
+            background: rgba(255,255,255,0.1);
+            border-left-color: #4fc3f7;
+            transform: translateX(5px);
+        }
+
+        .menu-item i {
+            margin-right: 15px;
+            font-size: 18px;
+            width: 20px;
+            text-align: center;
+        }
+
+        .menu-toggle {
+            position: fixed;
+            top: 50%;
+            left: 50px;
+            transform: translateY(-50%);
+            background: linear-gradient(135deg, #ff6b9d, #9c27b0);
+            color: white;
+            border: none;
+            padding: 15px 10px;
+            border-radius: 0 25px 25px 0;
+            cursor: pointer;
+            z-index: 1001;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(156, 39, 176, 0.3);
+            width: 50px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .menu-toggle:hover {
+            transform: translateY(-50%) scale(1.1);
+            box-shadow: 0 6px 25px rgba(156, 39, 176, 0.4);
+        }
+
+        .menu-toggle.active {
+            left: 350px;
+        }
+
+        .menu-toggle.active i {
+            transform: rotate(180deg);
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            display: none;
+            z-index: 999;
+        }
+
+        .overlay.active {
+            display: block;
+        }
+
+        .main-content {
+            margin-left: 0;
+            padding: 80px 20px 20px;
+            text-align: center;
+        }
+
+        .welcome-text {
+            color: white;
+            font-size: 48px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            margin-bottom: 20px;
+        }
+
+        .welcome-subtitle {
+            color: rgba(255,255,255,0.9);
+            font-size: 20px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                left: -100%;
+            }
+            
+            .menu-toggle {
+                left: 20px;
+            }
+            
+            .menu-toggle.active {
+                left: calc(100% - 50px);
+            }
+            
+            .welcome-text {
+                font-size: 32px;
+            }
+            
+            .welcome-subtitle {
+                font-size: 16px;
+            }
+            
+            .menu-container {
+                max-height: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="menu-toggle" id="menuToggle" onclick="toggleSidebar()">
+        <i class="fas fa-chevron-right"></i>
+    </button>
+
+    <div class="overlay" onclick="closeSidebar()"></div>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <img class="logo" src="logo.png" alt="Logo">
+            <h1 class="city-name">Cachoeiro de Itapemirim</h1>
+            <h2 class="city-subtitle">Centro</h2>
+        </div>
+
+        <div class="section-title">
+            <i class="fas fa-map-marker-alt"></i>
+            Onde Ir
+        </div>
+
+        <div class="menu-container">
+            <ul class="menu-list" id="menuList">
+            <!-- Itens serão adicionados dinamicamente aqui -->
+            </ul>
+        </div>
+        
+    </div>
+
+    <div class="main-content">
+        <h1 class="welcome-text">Bem-vindo a Cachoeiro de Itapemirim</h1>
+        <p class="welcome-subtitle">Descubra os melhores lugares da nossa cidade</p>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.querySelector('.overlay');
+            const menuToggle = document.getElementById('menuToggle');
+            
+            sidebar.classList.toggle('active');
+            overlay.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        }
+
+        function closeSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.querySelector('.overlay');
+            const menuToggle = document.getElementById('menuToggle');
+            
+            sidebar.classList.remove('active');
+            overlay.classList.remove('active');
+            menuToggle.classList.remove('active');
+        }
+
+        function selectLocation(locationName) {
+            alert(`Você selecionou: ${locationName}`);
+            closeSidebar();
+        }
+
+        // Função para adicionar itens ao menu dinamicamente
+        function addMenuItem(iconClass, text, onClick) {
+            const menuList = document.getElementById('menuList');
+            const menuItem = document.createElement('li');
+            menuItem.className = 'menu-item';
+            menuItem.innerHTML = `
+                <i class="${iconClass}"></i>
+                ${text}
+            `;
+            menuItem.onclick = onClick || function() { selectLocation(text); };
+            menuList.appendChild(menuItem);
+        }
+
+        // Exemplo de como usar para popular o menu com muitos itens:
+        const locations = [
+            { icon: 'fas fa-home', name: 'Casa dos Braga' },
+            { icon: 'fas fa-church', name: 'Consolação' },
+            { icon: 'fas fa-industry', name: 'Fábrica de Pios Maurílio Coelho' },
+            { icon: 'fas fa-tree', name: 'Floresta Nacional de Pacotuba' },
+            { icon: 'fas fa-church', name: 'Matriz Velha' },
+            { icon: 'fas fa-monument', name: 'Monumento Natural do Itabira' },
+            { icon: 'fas fa-building', name: 'Palácio Bernardino Monteiro' },
+            { icon: 'fas fa-mountain', name: 'Pedra da Penha' },
+            { icon: 'fas fa-mountain', name: 'Pedra do Caramba' },
+            { icon: 'fas fa-bridge', name: 'Ponte de Ferro' },
+            { icon: 'fas fa-road', name: 'Rampa do Mirante' },
+            { icon: 'fas fa-water', name: 'Beira Rio' },
+            { icon: 'fas fa-mountain', name: 'Cachoeira Alta' },
+            { icon: 'fas fa-building', name: 'Câmara Municipal' },
+            { icon: 'fas fa-home', name: 'Casa da Memória' },
+            { icon: 'fas fa-music', name: 'Casa de Cultura Roberto Carlos' }
+        ];
+
+        // Descomente a linha abaixo para popular o menu automaticamente
+        locations.forEach(location => addMenuItem(location.icon, location.name));
+
+        // Exemplo de como usar (você pode remover este comentário e código de exemplo):
+        // addMenuItem('fas fa-water', 'Beira Rio');
+        // addMenuItem('fas fa-mountain', 'Cachoeira Alta');
+
+        // Fechar menu com tecla ESC
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeSidebar();
+            }
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
