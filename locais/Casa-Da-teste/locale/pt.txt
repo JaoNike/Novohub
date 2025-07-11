@@ -1,0 +1,114 @@
+#: locale=pt
+
+## Action
+
+### URL
+LinkBehaviour_1AAA0A4C_7829_9002_41D0_C8F3893FF7C4.source = https://tour360.ondeir.top/cachoeiro/casa-da-memoria/
+LinkBehaviour_1AA96A47_7829_900E_41D5_A16FD8031148.source = https://tour360.ondeir.top/cachoeiro/casa-da-memoria/
+LinkBehaviour_0E963054_1DBB_9741_41B9_E85C77FE121B.source = https://tour360.top/cachoeiro/
+LinkBehaviour_0FF1D5E1_1DBA_B943_41A1_E22518A1B034.source = https://tour360.top/cachoeiro/
+LinkBehaviour_1AAA3A32_7829_9006_41A9_FD111631AB09.source = https://tour360.top/cachoeiro/beira-rio/
+LinkBehaviour_7DE314C9_A2F7_C50D_41B6_749AA396F94A.source = https://tour360.top/cachoeiro/cachoeira-alta/
+LinkBehaviour_F68B5B41_B203_C46F_41C5_F80A8A49713F.source = https://tour360.top/cachoeiro/camara-municipal/
+LinkBehaviour_1AAA3A34_7829_9002_41B6_5FBA822B2A6D.source = https://tour360.top/cachoeiro/casa-da-memoria/
+LinkBehaviour_19542A36_7829_900E_41C6_DBDE3EF8ADDD.source = https://tour360.top/cachoeiro/casa-de-cultura-roberto-carlos/
+LinkBehaviour_19543A38_7829_9002_41C0_4EDD59D51E45.source = https://tour360.top/cachoeiro/casa-dos-braga/
+LinkBehaviour_2A27062B_A1D1_450E_41D9_CBB2DDA6A699.source = https://tour360.top/cachoeiro/consolacao/
+LinkBehaviour_1AABAA39_7829_9002_41D8_C5236987F3CF.source = https://tour360.top/cachoeiro/fabrica-de-pios-maurilio-coelho/
+LinkBehaviour_1AAB9A3B_7829_9006_41D5_A972E912D0A9.source = https://tour360.top/cachoeiro/floresta-nacional-de-pacotuba/
+LinkBehaviour_1AAB0A3C_7829_9002_41C8_DCE0DCB70E5F.source = https://tour360.top/cachoeiro/matriz-velha/
+LinkBehaviour_6633327E_4480_41CE_41A2_A9404E330BCA.source = https://tour360.top/cachoeiro/palacio-bernardino-monteiro/
+LinkBehaviour_1AAADA40_7829_9002_41DE_FA822ECAFF0C.source = https://tour360.top/cachoeiro/pedra-da-penha/
+LinkBehaviour_8FD24F57_BB97_C3CA_41A1_AF4E30324B1C.source = https://tour360.top/cachoeiro/pedra-do-caramba/
+LinkBehaviour_1AAA1A3E_7829_907E_41DB_726661CA2DF8.source = https://tour360.top/cachoeiro/pico-do-itabira/
+LinkBehaviour_D511873A_CFBD_0EA1_41D6_BA3B0B3CED41.source = https://tour360.top/cachoeiro/ponte-de-ferro/
+WebFrame_22F9EEFF_0C1A_2293_4165_411D4444EFEA_mobile.url = https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d21092.841752621254!2d-41.1304913654723!3d-20.842907281188737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1712943889203!5m2!1spt-BR!2sbr
+
+## Media
+
+### Title
+panorama_EDD079B5_FA72_7D4B_41EB_3FEF55EE8AA5.label = IMG_20250414_143548_00_028
+panorama_EFEDB6D7_FA72_54F6_41C6_8A14D24E0FBD.label = IMG_20250414_143650_00_029
+
+## Skin
+
+### Button
+Button_F86F7F29_EBAE_7A0A_41C7_FCA75E247D83_mobile.label = Beira Rio
+Button_7DE2E4C6_A2F7_C506_41D4_F275AB1AFE57_mobile.label = Cachoeira Alta
+Button_F6F5AB3F_B203_C413_41E0_EA7ED75D4380_mobile.label = Camara Municipal
+Button_D39C6C86_CFAD_7FD8_41E4_89E241A7ECF1_mobile.label = Casa da Memória
+Button_D0D25271_CFAD_8B38_41E2_2061170CAF78_mobile.label = Casa da Memória
+Button_2A2D853B_310E_001C_41C4_1C2E2BAFC35D_mobile.label = Casa da Memória
+Button_CAF00796_D3A4_5CBE_41C5_19FDC57E7E66_mobile.label = Casa de Cult. Roberto Carlos
+Button_F85A830A_EBAE_6A0E_41EC_EBB38F4CD037_mobile.label = Casa dos Braga
+Button_2A259629_A1D1_450A_41C1_21AC601CFACA_mobile.label = Consolação
+Button_F845DAF9_EBAE_5A0A_41EB_D94FB5EACFAF_mobile.label = Floresta Nacional de Pacotuba
+Button_2B1F178A_656A_1D4F_41B0_8CD0DE72501E_mobile.label = Fábrica de Pios Maurílio Coelho
+Button_F8619178_EBAE_660B_41E2_4AD09A3FBBCA_mobile.label = Matriz Velha
+Button_FE9CF562_EBAE_6E3F_41EA_36C316D0CE7F_mobile.label = Monumento Natural do Itabira
+Button_AD755F27_BE2E_F527_41D4_A33D4C5797FC_mobile.label = Onde Comer
+Button_AD755F27_BE2E_F527_41D4_A33D4C5797FC_mobile.pressedLabel = Onde Comer
+Button_D0D3E270_CFAD_8B38_41CC_25E3BD9C323D_mobile.label = Onde Comer
+Button_ADC9B137_BE2E_2D27_41C6_D9AD67B5F3F2_mobile.label = Onde Comprar
+Button_ADC9B137_BE2E_2D27_41C6_D9AD67B5F3F2_mobile.pressedLabel = Onde Comprar
+Button_D39C2C84_CFAD_7FD8_41D4_F0780770E30E_mobile.label = Onde Comprar
+Button_AD53BF14_BE2E_16F9_41E3_B911202839E4_mobile.pressedLabel = Onde Fazer
+Button_AD53BF14_BE2E_16F9_41E3_B911202839E4_mobile.label = Onde Fazer
+Button_AD41B5C4_BE2E_F559_4195_A884FF4ADD8B_mobile.pressedLabel = Onde Ficar
+Button_AD41B5C4_BE2E_F559_4195_A884FF4ADD8B_mobile.label = Onde Ficar
+Button_CB8E53CD_FCF6_23BC_41D9_292F902595CB_mobile.label = Onde Ir
+Button_0A054365_2D09_CB9F_4145_8C365B373D19_mobile.pressedLabel = Onde Ir
+Button_CB8E53CD_FCF6_23BC_41D9_292F902595CB_mobile.pressedLabel = Onde Ir
+Button_D140469E_CFA3_8BE8_41E1_9E7182CA1DF6_mobile.pressedLabel = Onde Ir
+Button_D140469E_CFA3_8BE8_41E1_9E7182CA1DF6_mobile.label = Onde Ir
+Button_D0D3E270_CFAD_8B38_41CC_25E3BD9C323D_mobile.pressedLabel = Onde Ir
+Button_0A054365_2D09_CB9F_4145_8C365B373D19_mobile.label = Onde Ir
+Button_6631B27C_4480_41D2_419E_3E9FB5769CE3_mobile.label = Palácio Bernardino Monteiro
+Button_F86AD060_EBAE_663B_41D4_5CDBA4FFCE55_mobile.label = Pedra da Penha
+Button_8FD5CF55_BB97_C3CE_41D0_36F91FD4B826_mobile.label = Pedra do Caramba
+Button_D52F1738_CFBD_0EA1_41E5_2334A3A01097_mobile.label = Ponte de Ferro
+Button_D0D4F26E_CFAD_8B28_41D5_F80D15858D92_mobile.label = VOLTAR
+Button_D39E7C83_CFAD_7FD8_41C3_322F5BFA8C14_mobile.label = VOLTAR
+Button_2A2DA53B_310E_001C_41C7_8885E712C50B_mobile.label = VOLTAR
+Button_CBD61A7B_D3BC_3476_41E2_B69CD58F8620_mobile.label = teste
+
+### Image
+Image_0C42AC80_1DB6_EFC1_41B5_67AAD18A95B4.url = skin/Image_0C42AC80_1DB6_EFC1_41B5_67AAD18A95B4_pt.png
+Image_0F77440F_1DBA_BEDF_41A2_5AFF44E300C6.url = skin/Image_0F77440F_1DBA_BEDF_41A2_5AFF44E300C6_pt.png
+
+### Multiline Text
+HTMLText_C4B6F6E9_FC5E_2564_4137_ABC2D08185EC_mobile.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-align:left;font-size:3.748621830209484vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:3.75vh;font-family:Delichia Script DEMO;"><B><I>{{tour.name}}</I></B></SPAN></SPAN></DIV></div>
+HTMLText_C4B626EA_FC5E_2564_41E1_A92E30C7CADC_mobile.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-align:left;font-size:1.764057331863284vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:1.76vh;">{{tour.description}}</SPAN></SPAN></DIV><p STYLE="margin:0; line-height:0.94vh;"><BR STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-size:0.94vh;font-family:Arial, Helvetica, sans-serif;"/></p><DIV STYLE="text-align:left;font-size:1.764057331863284vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:1.76vh;"><B>{{title}}</B></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:1.764057331863284vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:1.76vh;">{{subtitle}}</SPAN></SPAN></DIV><p STYLE="margin:0; line-height:0.94vh;"><BR STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-size:0.94vh;font-family:Arial, Helvetica, sans-serif;"/></p><p STYLE="margin:0; line-height:0.94vh;"><BR STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-size:0.94vh;font-family:Arial, Helvetica, sans-serif;"/></p></div>
+HTMLText_1610DA06_5B26_1746_41B6_FA5078FE0C0B_mobile.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-shadow:1px 1px 3.4px rgba(0,0,0,0.6);line-height:125%;text-align:center;font-size:18.7px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ffffff;font-size:18.7px;font-family:Delichia Script DEMO;">{{tour.name}}</SPAN></SPAN></DIV><DIV STYLE="text-shadow:1px 1px 3.4px rgba(0,0,0,0.6);text-align:center;font-size:13.6px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ffffff;font-size:13.6px;font-family:Oswald Light;">{{title}}</SPAN></SPAN></DIV></div>
+HTMLText_DACFF269_EEAA_068D_41CF_2DB8C61B58BD_mobile.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-shadow:1px 1px 3.4px rgba(0,0,0,0.6);text-align:left;font-size:20.4px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ffffff;font-size:20.4px;font-family:Delichia Script DEMO;">{{tour.name}}</SPAN></SPAN></DIV><DIV STYLE="text-shadow:1px 1px 3.4px rgba(0,0,0,0.6);line-height:150%;text-align:left;font-size:13.6px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ffffff;font-size:13.6px;font-family:Oswald Light;">{{title}}</SPAN></SPAN></DIV></div>
+
+### Tooltip
+IconButton_EEEB3760_E38B_8603_41D6_FE6B11A3DA96.toolTip = Esconder Pontos
+IconButton_EEEB3760_E38B_8603_41D6_FE6B11A3DA96_mobile.toolTip = Esconder Pontos
+IconButton_1AF35943_2D07_479B_41AF_FBC8A1477882_mobile.toolTip = Fechar Menu
+IconButton_5080D29A_43F6_AE6F_41C2_8F7019503F88_mobile.toolTip = Fotografar Tela
+IconButton_5080D29A_43F6_AE6F_41C2_8F7019503F88.toolTip = Fotografar Tela
+IconButton_EE9FBAB2_E389_8E06_41D7_903ABEDD153A.toolTip = Girar
+IconButton_EE9FBAB2_E389_8E06_41D7_903ABEDD153A_mobile.toolTip = Girar
+Button_ADC9B137_BE2E_2D27_41C6_D9AD67B5F3F2_mobile.toolTip = Locais Compras
+Button_AD755F27_BE2E_F527_41D4_A33D4C5797FC_mobile.toolTip = Locais Gastronômicos
+Button_D39C2C84_CFAD_7FD8_41D4_F0780770E30E_mobile.toolTip = Locais Turisticos
+Button_0A054365_2D09_CB9F_4145_8C365B373D19_mobile.toolTip = Locais Turisticos
+Button_CB8E53CD_FCF6_23BC_41D9_292F902595CB_mobile.toolTip = Locais Turisticos
+Button_D140469E_CFA3_8BE8_41E1_9E7182CA1DF6_mobile.toolTip = Locais Turisticos
+Button_D0D3E270_CFAD_8B38_41CC_25E3BD9C323D_mobile.toolTip = Locais Turisticos
+Button_AD41B5C4_BE2E_F559_4195_A884FF4ADD8B_mobile.toolTip = Locais de Hospedagens
+Button_AD53BF14_BE2E_16F9_41E3_B911202839E4_mobile.toolTip = Locais de Serviços
+IconButton_EEFF957A_E389_9A06_41E1_2AD21904F8C0.toolTip = Tela Cheia
+IconButton_EEFF957A_E389_9A06_41E1_2AD21904F8C0_mobile.toolTip = Tela Cheia
+IconButton_EF7806FA_E38F_8606_41E5_5C4557EBCACB_mobile.toolTip = VR
+IconButton_EF7806FA_E38F_8606_41E5_5C4557EBCACB.toolTip = VR
+ThumbnailList_5CC606D1_0C8A_F505_41A0_386B38F944F1_mobile.toolTip = Vista aérea
+ThumbnailList_5CC606D1_0C8A_F505_41A0_386B38F944F1.toolTip = Vista aérea
+
+## Tour
+
+### Description
+
+### Title
+tour.name = Sem Título 29

@@ -1,0 +1,18 @@
+{
+  "name": "novohub-monitor",
+  "version": "1.0.0",
+  "description": "Sistema de monitoramento de pastas para Novohub",
+  "main": "executar-monitor.js",
+  "scripts": {
+    "start": "node executar-monitor.js",
+    "monitor": "node executar-monitor.js",
+    "dev": "nodemon executar-monitor.js",
+    "serve": "npx http-server . -p 3000"
+  },
+  "keywords": ["monitor", "arquivos", "nodejs", "filesystem"],
+  "author": "Novohub",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "nome": "Casa-Da-teste",
+    "caminho": "locais\\Casa-Da-teste",
+    "icone": "fas fa-map-marker-alt",
+    "timestamp": 1752260630997
+  },
+  {
+    "nome": "teste",
+    "caminho": "locais\\teste",
+    "icone": "fas fa-map-marker-alt",
+    "timestamp": 1752260630998
+  }
+]
