@@ -1,0 +1,92 @@
+#: locale=pt
+
+## Action
+
+### URL
+LinkBehaviour_4F997B3E_34AF_6D3D_41CF_7D578125BB40.source = https://tour360.top/cachoeiro/
+LinkBehaviour_B4865CE9_2212_3FD0_41AE_7CE470C19574.source = https://tour360.top/presidente-kennedy/
+LinkBehaviour_3BD7D0BD_1778_FA5D_4199_001CD7FA8709.source = https://tour360.top/presidente-kennedy/
+LinkBehaviour_B11D2DCE_2212_19D3_41B4_CCC2C33A240F.source = https://tour360.top/presidente-kennedy/
+LinkBehaviour_4F998B33_34AF_6ECB_41A3_7A63660745F0.source = https://tour360.top/presidente-kennedy/
+LinkBehaviour_4F9B5B37_34AF_6ECB_41CB_E00DA2F6474A.source = https://tour360.top/presidente-kennedy/igreja-ns-aparecida/
+LinkBehaviour_4F972B39_34AF_6EC7_41BF_09099CD17612.source = https://tour360.top/presidente-kennedy/jongo/
+LinkBehaviour_4F99AB3B_34AF_6D3B_41A9_4627D1AEA811.source = https://tour360.top/presidente-kennedy/morro-da-serrinha/
+LinkBehaviour_85D40D86_9135_D3AC_41D2_9E9BD6442F2B.source = https://tour360.top/presidente-kennedy/praia-das-neves
+LinkBehaviour_4F990B36_34AF_6ECD_4182_A88E840958DF.source = https://tour360.top/presidente-kennedy/praia-das-neves/
+LinkBehaviour_84A8ABB2_9136_37E4_41B6_6FB693267F6E.source = https://tour360.top/presidente-kennedy/praia-de-maroba
+LinkBehaviour_4F9BDB34_34AF_6ECD_41C8_6C848FF3F0AD.source = https://tour360.top/presidente-kennedy/praia-de-maroba/
+LinkBehaviour_3E0AB165_176F_7AED_41B1_D747EBEB87E1.source = https://tour360.top/presidente-kennedy/santuario-das-neves/
+LinkBehaviour_4F9C9B38_34AF_6EC5_41B7_B443C840657A.source = https://tour360.top/presidente-kennedy/santuario-das-neves/
+
+## Hotspot
+
+### Tooltip
+FlatHotspotPanoramaOverlayArea_3E4B2CC5_176F_2A22_4128_05D514B868F8.toolTip = Praia das Neves
+FlatHotspotPanoramaOverlayArea_3E8BD15F_176F_1ADE_41A6_C92EB8FC5AF3.toolTip = Praia de Maroba
+FlatHotspotPanoramaOverlayArea_3BD200B7_1778_FA6E_419F_2286E3772C0E.toolTip = Presidente Kennedy - sede
+FlatHotspotPanoramaOverlayArea_3E0F6165_176F_7AED_41A2_E56D0D8423BD.toolTip = Santuário das Neves
+
+## Media
+
+### Title
+panorama_3BA54663_1768_E6E5_419E_573B4FD28376.label = Ponte da Amizade
+
+## Popup
+
+### Body
+htmlText_EB51B1B6_AAA8_422B_41E2_C966119308C6.html = <div style="text-align:left; color:#000; "><HTML><BODY><DIV STYLE="text-align:left;font-size:18px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:18px;font-family:Oswald Light;">A Ponte da Amizade é um importante elo entre os estados do Espírito Santo e do Rio de Janeiro, conectando a ES-060, em Presidente Kennedy, à RJ-224, no município fluminense de São Francisco de Itabapoana. </SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:18px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:18px;font-family:Oswald Light;">Localizada a apenas 4 quilômetros da foz do rio, a estrutura não apenas facilita o trânsito entre os dois estados, mas também desempenha um papel fundamental na economia e no turismo regional.</SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:18px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:18px;font-family:Oswald Light;">Além de ser um ponto estratégico para viajantes, a ponte é essencial para o escoamento da produção agrícola, especialmente a produção de cana-de-açúcar. </SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:18px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:18px;font-family:Oswald Light;">A Ponte da Amizade também guarda um valor histórico e cultural. Próximo à sua estrutura, no lado fluminense, é possível avistar as ruínas de uma antiga fábrica de farinha, testemunho do passado econômico da região, que por muitos anos viveu da produção agrícola e industrial.</SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:18px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:18px;font-family:Oswald Light;">No final de 2020, devido a problemas estruturais, a ponte precisou ser interditada para reforma, com obras conduzidas pelo Departamento de Edificações e Rodovias do Espírito Santo (DER-ES). Durante esse período, foi permitido apenas o trânsito de veículos com até 15 toneladas.</SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:18px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:18px;font-family:Oswald Light;">Atualmente, com sua infraestrutura recuperada, a Ponte da Amizade continua sendo um elo vital entre os dois estados, sustentando o desenvolvimento econômico e permitindo o tráfego de turistas e trabalhadores.</SPAN></SPAN></DIV></BODY></HTML></div>
+
+### Title
+window_EB6F81B6_AAA8_422B_41E4_2BD638B6F478.title = Ponte da Amizade
+
+## Skin
+
+### Button
+Button_B07E77A6_8194_C770_4198_5E2150018A95_mobile.label = Cachoeiro de Itapemirim
+Button_B07E77A6_8194_C770_4198_5E2150018A95_mobile.pressedLabel = Cachoeiro de Itapemirim
+Button_99D5637B_B671_E2AA_41E2_823B519FC86A_mobile.label = Igreja NS Aparecida
+Button_996EEDCB_B671_A1EA_41D9_AFA94FD55C5B_mobile.label = Jongo
+Button_9954FD6D_B670_A6AE_41E5_7815FE4F0189_mobile.label = Morro da Serrinha
+Button_D140469E_CFA3_8BE8_41E1_9E7182CA1DF6_mobile.pressedLabel = Onde Ir
+Button_CB8E53CD_FCF6_23BC_41D9_292F902595CB_mobile.label = Onde Ir
+Button_D140469E_CFA3_8BE8_41E1_9E7182CA1DF6_mobile.label = Onde Ir
+Button_CB8E53CD_FCF6_23BC_41D9_292F902595CB_mobile.pressedLabel = Onde Ir
+Button_948855A2_B671_E65A_41D4_0782481AD061_mobile.label = Praia das Neves
+Button_4F9B9D7E_3451_653A_41B2_D6AA441D411D_mobile.label = Praia de Marobá
+Button_19CCAE4F_3C6F_A75B_41C0_C690DC5B74E0_mobile.label = Presidente Kennedy - sede
+Button_992271E1_B671_E1D6_41E5_C4ACB3166D1C_mobile.label = Santuário das Neves
+Button_2A2DA53B_310E_001C_41C7_8885E712C50B_mobile.label = VOLTAR
+
+### Image
+Image_4FFA1FFC_221E_19B0_41B1_BEE42CCC1A43.url = skin/Image_4FFA1FFC_221E_19B0_41B1_BEE42CCC1A43_pt.png
+Image_56797400_2212_EE4F_41B1_F68A4F8FEEF0.url = skin/Image_56797400_2212_EE4F_41B1_F68A4F8FEEF0_pt.png
+
+### Multiline Text
+HTMLText_1610DA06_5B26_1746_41B6_FA5078FE0C0B_mobile.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-shadow:1px 1px 3.4px rgba(0,0,0,0.6);line-height:125%;text-align:center;font-size:18.7px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ffffff;font-size:18.7px;font-family:Delichia Script DEMO;">{{tour.name}}</SPAN></SPAN></DIV><DIV STYLE="text-shadow:1px 1px 3.4px rgba(0,0,0,0.6);text-align:center;font-size:13.6px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ffffff;font-size:13.6px;font-family:Oswald Light;">{{title}}</SPAN></SPAN></DIV></div>
+HTMLText_FDCCC147_8394_5B3F_41B6_C4F9440D3004_mobile.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-shadow:1px 1px 3.4px rgba(0,0,0,0.6);line-height:125%;text-align:left;font-size:11.9px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#08bcaa;font-size:11.9px;font-family:Oswald Light;">Outras cidades:</SPAN></SPAN></DIV></div>
+HTMLText_DACFF269_EEAA_068D_41CF_2DB8C61B58BD_mobile.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-shadow:1px 1px 3.4px rgba(0,0,0,0.6);text-align:left;font-size:20.4px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ffffff;font-size:20.4px;font-family:Delichia Script DEMO;">{{tour.name}}</SPAN></SPAN></DIV><DIV STYLE="text-shadow:1px 1px 3.4px rgba(0,0,0,0.6);line-height:150%;text-align:left;font-size:13.6px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ffffff;font-size:13.6px;font-family:Oswald Light;">{{title}}</SPAN></SPAN></DIV></div>
+
+### Tooltip
+IconButton_223F0171_3014_B375_41C1_61063C3D73B3_mobile.toolTip = Abrir menu
+IconButton_EEEB3760_E38B_8603_41D6_FE6B11A3DA96_mobile.toolTip = Esconder Pontos
+IconButton_EEEB3760_E38B_8603_41D6_FE6B11A3DA96.toolTip = Esconder Pontos
+IconButton_1AF35943_2D07_479B_41AF_FBC8A1477882_mobile.toolTip = Fechar Menu
+IconButton_5080D29A_43F6_AE6F_41C2_8F7019503F88.toolTip = Fotografar Tela
+IconButton_5080D29A_43F6_AE6F_41C2_8F7019503F88_mobile.toolTip = Fotografar Tela
+IconButton_EE9FBAB2_E389_8E06_41D7_903ABEDD153A.toolTip = Girar
+IconButton_EE9FBAB2_E389_8E06_41D7_903ABEDD153A_mobile.toolTip = Girar
+Button_D140469E_CFA3_8BE8_41E1_9E7182CA1DF6_mobile.toolTip = Locais Turisticos
+Button_CB8E53CD_FCF6_23BC_41D9_292F902595CB_mobile.toolTip = Locais Turisticos
+IconButton_EEFF957A_E389_9A06_41E1_2AD21904F8C0.toolTip = Tela Cheia
+IconButton_EEFF957A_E389_9A06_41E1_2AD21904F8C0_mobile.toolTip = Tela Cheia
+IconButton_EF7806FA_E38F_8606_41E5_5C4557EBCACB_mobile.toolTip = VR
+IconButton_EF7806FA_E38F_8606_41E5_5C4557EBCACB.toolTip = VR
+ThumbnailList_5CC606D1_0C8A_F505_41A0_386B38F944F1_mobile.toolTip = Vista aérea
+ThumbnailList_5CC606D1_0C8A_F505_41A0_386B38F944F1.toolTip = Vista aérea
+
+## Tour
+
+### Description
+
+### Title
+tour.name = Ponte do Rio Itabapoana

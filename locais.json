@@ -3,12 +3,36 @@
     "nome": "Casa-Da-teste",
     "caminho": "locais\\Casa-Da-teste",
     "icone": "fas fa-map-marker-alt",
-    "timestamp": 1752260630997
+    "timestamp": 1752510986580
   },
   {
     "nome": "teste",
     "caminho": "locais\\teste",
     "icone": "fas fa-map-marker-alt",
-    "timestamp": 1752260630998
+    "timestamp": 1752510986581
+  },
+  {
+    "nome": "ponte-do-rio-itabapoana",
+    "caminho": "locais\\ponte-do-rio-itabapoana",
+    "icone": "fas fa-map-marker-alt",
+    "timestamp": 1752511003350
+  },
+  {
+    "nome": "nova-pasta-otimizada",
+    "caminho": "locais\\nova-pasta-otimizada",
+    "icone": "fas fa-map-marker-alt",
+    "timestamp": 1752511841758
+  },
+  {
+    "nome": "pico-do-itabira",
+    "caminho": "locais\\pico-do-itabira",
+    "icone": "fas fa-map-marker-alt",
+    "timestamp": 1752512695976
+  },
+  {
+    "nome": "cachoeira-alta",
+    "caminho": "locais\\cachoeira-alta",
+    "icone": "fas fa-map-marker-alt",
+    "timestamp": 1752513169396
   }
 ]
