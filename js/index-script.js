@@ -133,9 +133,12 @@ function criarFeedbackDiv() {
 }
 
 // Carrega locais salvos automaticamente quando a página carrega
-async function loadSavedLocations() {
+async function loadSavedLocations(isManualCheck = false) {
     try {
-        mostrarFeedback('loading', 'Verificando atualizações...');
+        // Só mostra loading se for verificação manual ou primeira carga
+        if (isManualCheck || ultimoHashCarregado === '') {
+            mostrarFeedback('loading', 'Verificando atualizações...');
+        }
         
         // Chama o PHP para obter os locais atualizados
         const response = await fetch('./php/monitor-locais.php?' + Date.now());
@@ -146,8 +149,10 @@ async function loadSavedLocations() {
             
             // Verifica se houve mudanças comparando o hash
             if (novoHash === ultimoHashCarregado && ultimosLocaisCarregados.length > 0) {
-                // Nenhuma mudança detectada
-                mostrarFeedback('success', 'Nenhuma alteração detectada');
+                // Nenhuma mudança detectada - só mostra feedback se for verificação manual
+                if (isManualCheck) {
+                    mostrarFeedback('success', 'Nenhuma alteração detectada');
+                }
                 return false;
             }
             
@@ -168,10 +173,16 @@ async function loadSavedLocations() {
                 ultimosLocaisCarregados = [...locaisDoPhp];
                 ultimoHashCarregado = novoHash;
                 
-                mostrarFeedback('success', `${locaisDoPhp.length} locais atualizados`);
+                // Mostra feedback apenas se for primeira carga ou verificação manual ou mudança real
+                if (isManualCheck || ultimoHashCarregado === '' || locaisDoPhp.length > 0) {
+                    mostrarFeedback('success', `${locaisDoPhp.length} locais atualizados`);
+                }
                 return true;
             } else {
-                mostrarFeedback('success', 'Sistema atualizado');
+                // Só mostra se for verificação manual
+                if (isManualCheck) {
+                    mostrarFeedback('success', 'Sistema atualizado');
+                }
                 return false;
             }
         } else {
@@ -179,6 +190,7 @@ async function loadSavedLocations() {
         }
     } catch (error) {
         console.log('⚠️ Erro ao carregar locais do PHP:', error.message);
+        // Sempre mostra erro
         mostrarFeedback('error', 'Erro ao conectar com o servidor');
         return false;
     }
@@ -186,11 +198,11 @@ async function loadSavedLocations() {
 
 // Carrega locais salvos automaticamente quando a página carrega
 document.addEventListener('DOMContentLoaded', () => {
-    loadSavedLocations();
+    loadSavedLocations(true); // Primeira carga - mostra feedback
     
     // Verificação automática inteligente a cada 30 segundos
     setInterval(async () => {
-        const updated = await loadSavedLocations();
+        const updated = await loadSavedLocations(false); // Verificação automática - não mostra feedback desnecessário
         if (updated) {
             console.log('🔄 Menu atualizado automaticamente com novas mudanças');
         }
@@ -199,7 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Função para verificar mudanças de forma otimizada (chamada manual)
 async function checkForUpdates() {
-    const updated = await loadSavedLocations();
+    const updated = await loadSavedLocations(true); // Verificação manual - mostra feedback
     if (updated) {
         console.log('🔄 Menu atualizado com novas mudanças via PHP');
     }
@@ -207,7 +219,7 @@ async function checkForUpdates() {
 
 setTimeout(() => {
     console.log('📍 Sistema de monitoramento inteligente carregado');
-    mostrarFeedback('success', 'Sistema de monitoramento ativo');
+    // Removido o feedback desnecessário aqui
 }, 1000);
 
 document.addEventListener('keydown', function(event) {
