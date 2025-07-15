@@ -7,7 +7,7 @@ console.log('🚀 Iniciando Monitor de Arquivos - Node.js');
 console.log('==========================================');
 
 // Configura a pasta para monitorar
-const pastaParaMonitorar = './locais';
+const pastaParaMonitorar = 'novohub/locais';
 
 const monitor = new MonitorArquivos(pastaParaMonitorar);
 
@@ -16,7 +16,7 @@ let locaisEncontrados = [];
 
 // Função para salvar locais em JSON
 function salvarLocaisJSON() {
-    const jsonPath = './locais.json';
+    const jsonPath = 'novohub/locais.json';
     try {
         fs.writeFileSync(jsonPath, JSON.stringify(locaisEncontrados, null, 2));
         console.log(`💾 Arquivo ${jsonPath} atualizado com ${locaisEncontrados.length} locais`);
