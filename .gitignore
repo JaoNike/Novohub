@@ -1,1 +1,3 @@
-locais/
+./locais
+./locais.json
+# Ignore local directories
