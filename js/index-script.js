@@ -50,16 +50,20 @@ document.addEventListener('DOMContentLoaded', function() {
 function selectLocation(locationName) {
     const iframe = document.getElementById('contentFrame');
     
-    // Usa caminho correto para as pastas locais
-    iframe.src = `./locais/${locationName}/index.htm`;
-    console.log(`🌐 Carregando "./locais/${locationName}/index.htm"`);
+    fetch(`./locais/${locationName}/index.html`)
+        .then(response => {
+            if (response.ok) {
+                iframe.src = `./locais/${locationName}/index.html`;
+                console.log(`🌐 Carregando "./locais/${locationName}/index.html"`);
+            } else {
+                iframe.src = `./locais/${locationName}/index.htm`;
+                console.log(`🌐 Carregando "./locais/${locationName}/index.htm"`);
+            }
+        })
+        .catch(error => {
+            console.error(`🚫 Erro ao carregar ${error}`);
+        });
 
-    // Fallback para index.htm se index.html não existir
-    iframe.onerror = function() {
-        iframe.src = `./locais/${locationName}/`;
-        console.log(`🌐 Tentando fallback: "./locais/${locationName}/"`);
-    };
-    
     closeSidebar();
 }
 
@@ -75,7 +79,6 @@ function addMenuItem(iconClass, text, onClick) {
     menuItem.onclick = onClick || function() { selectLocation(text); };
     menuList.appendChild(menuItem);
 }
-
 
 // Variável para controlar a última versão carregada
 let ultimoTimestampCarregado = 0;
