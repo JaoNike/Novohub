@@ -1,7 +1,7 @@
 [
     {
         "nome": "Casa-Da-teste",
-        "caminho": "..\/locais\/Casa-Da-teste",
+        "caminho": "locais\/Casa-Da-teste",
         "icone": "fas fa-map-marker-alt",
         "timestamp": 1752256564000,
         "dataModificacao": "2025-07-11 17:56:04",
@@ -9,7 +9,7 @@
     },
     {
         "nome": "cachoeira-alta",
-        "caminho": "..\/locais\/cachoeira-alta",
+        "caminho": "locais\/cachoeira-alta",
         "icone": "fas fa-map-marker-alt",
         "timestamp": 1752513170000,
         "dataModificacao": "2025-07-14 17:12:50",
@@ -17,7 +17,7 @@
     },
     {
         "nome": "centro",
-        "caminho": "..\/locais\/centro",
+        "caminho": "locais\/centro",
         "icone": "fas fa-map-marker-alt",
         "timestamp": 1752606508000,
         "dataModificacao": "2025-07-15 19:08:28",
@@ -25,7 +25,7 @@
     },
     {
         "nome": "centroTESTE",
-        "caminho": "..\/locais\/centroTESTE",
+        "caminho": "locais\/centroTESTE",
         "icone": "fas fa-map-marker-alt",
         "timestamp": 1752603454000,
         "dataModificacao": "2025-07-15 18:17:34",
@@ -33,7 +33,7 @@
     },
     {
         "nome": "nova-pasta-otimizada",
-        "caminho": "..\/locais\/nova-pasta-otimizada",
+        "caminho": "locais\/nova-pasta-otimizada",
         "icone": "fas fa-map-marker-alt",
         "timestamp": 1752511840000,
         "dataModificacao": "2025-07-14 16:50:40",
@@ -41,7 +41,7 @@
     },
     {
         "nome": "parque-itabira",
-        "caminho": "..\/locais\/parque-itabira",
+        "caminho": "locais\/parque-itabira",
         "icone": "fas fa-map-marker-alt",
         "timestamp": 1752603454000,
         "dataModificacao": "2025-07-15 18:17:34",
@@ -49,7 +49,7 @@
     },
     {
         "nome": "pico-do-itabira",
-        "caminho": "..\/locais\/pico-do-itabira",
+        "caminho": "locais\/pico-do-itabira",
         "icone": "fas fa-map-marker-alt",
         "timestamp": 1752512696000,
         "dataModificacao": "2025-07-14 17:04:56",
@@ -57,7 +57,7 @@
     },
     {
         "nome": "ponte-do-rio-itabapoana",
-        "caminho": "..\/locais\/ponte-do-rio-itabapoana",
+        "caminho": "locais\/ponte-do-rio-itabapoana",
         "icone": "fas fa-map-marker-alt",
         "timestamp": 1752511003000,
         "dataModificacao": "2025-07-14 16:36:43",
@@ -65,7 +65,7 @@
     },
     {
         "nome": "teste",
-        "caminho": "..\/locais\/teste",
+        "caminho": "locais\/teste",
         "icone": "fas fa-map-marker-alt",
         "timestamp": 1752512942000,
         "dataModificacao": "2025-07-14 17:09:02",

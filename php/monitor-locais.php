@@ -65,7 +65,7 @@ function escaneiarPastas($pastaBase = '../locais') {
                 
                 $localInfo = [
                     'nome' => $pasta,
-                    'caminho' => $caminhoPasta,
+                    'caminho' => 'locais/' . $pasta,
                     'icone' => 'fas fa-map-marker-alt',
                     'timestamp' => $timestampFinal * 1000,
                     'dataModificacao' => date('Y-m-d H:i:s', $timestampFinal),

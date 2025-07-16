@@ -48,12 +48,17 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function selectLocation(locationName) {
-    const iframe = document.querySelector('.main-content iframe');
+    const iframe = document.getElementById('contentFrame');
     
-    // Tenta carregar da pasta locais/nome-da-pasta/index.htm
-    const folderName = locationName.toLowerCase().replace(/\s+/g, '-');
-    iframe.src = `Novohub/locais/${folderName}/index.htm`;
-    console.log(`🌐 Carregando "Novohub/locais/${folderName}/index.htm"`);
+    // Usa caminho correto para as pastas locais
+    iframe.src = `./locais/${locationName}/index.htm`;
+    console.log(`🌐 Carregando "./locais/${locationName}/index.htm"`);
+
+    // Fallback para index.htm se index.html não existir
+    iframe.onerror = function() {
+        iframe.src = `./locais/${locationName}/`;
+        console.log(`🌐 Tentando fallback: "./locais/${locationName}/"`);
+    };
     
     closeSidebar();
 }

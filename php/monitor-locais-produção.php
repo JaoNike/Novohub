@@ -7,7 +7,7 @@ header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type');
 
-function escaneiarPastas($pastaBase = 'Novohub/locais') {
+function escaneiarPastas($pastaBase = '../locais') {
     $locaisEncontrados = [];
     $hashGlobal = ''; // Para detectar mudanças
     
@@ -46,7 +46,7 @@ function escaneiarPastas($pastaBase = 'Novohub/locais') {
                 
                 $localInfo = [
                     'nome' => $pasta,
-                    'caminho' => $caminhoPasta,
+                    'caminho' => 'locais/' . $pasta,
                     'icone' => 'fas fa-map-marker-alt',
                     'timestamp' => $timestampFinal * 1000,
                     'dataModificacao' => date('Y-m-d H:i:s', $timestampFinal),
@@ -64,7 +64,7 @@ function escaneiarPastas($pastaBase = 'Novohub/locais') {
     return ['locais' => $locaisEncontrados, 'hash' => md5($hashGlobal)];
 }
 
-function salvarJSON($dados, $arquivo = 'Novohub/locais.json') {
+function salvarJSON($dados, $arquivo = '../locais.json') {
     $json = json_encode($dados, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
     file_put_contents($arquivo, $json);
     return $json;
@@ -72,11 +72,11 @@ function salvarJSON($dados, $arquivo = 'Novohub/locais.json') {
 
 // Função principal
 function atualizarLocais() {
-    $resultado = escaneiarPastas('Novohub/locais');
+    $resultado = escaneiarPastas('../locais');
     $locais = $resultado['locais'];
     $hash = $resultado['hash'];
     
-    $json = salvarJSON($locais);
+    $json = salvarJSON($locais, '../locais.json');
     
     return [
         'status' => 'success',
