@@ -164,10 +164,13 @@ async function loadSavedLocations(isManualCheck = false) {
                 return false;
             }
             
-            console.log(`📂 ${locaisDoPhp.length} locais carregados do PHP (${novoHash !== ultimoHashCarregado ? 'atualizados' : 'sem mudanças'})`);
+            console.log(`📂 ${locaisDoPhp.length} locais carregados do PHP`);
             
             // Se houve mudanças, atualiza o menu
             if (novoHash !== ultimoHashCarregado) {
+                const isPrimeiraCarga = ultimoHashCarregado === '';
+                console.log(`🔄 ${isPrimeiraCarga ? 'Primeira carga' : 'Mudanças detectadas'} - Hash: ${novoHash}`);
+                
                 // Limpa todos os itens do menu antes de adicionar novos
                 const menuList = document.getElementById('menuList');
                 menuList.innerHTML = '';
@@ -179,14 +182,23 @@ async function loadSavedLocations(isManualCheck = false) {
                 
                 // Atualiza as referências
                 ultimosLocaisCarregados = [...locaisDoPhp];
-                ultimoHashCarregado = novoHash;
                 
-                // Mostra feedback apenas se for primeira carga ou verificação manual ou mudança real
-                if (isManualCheck || ultimoHashCarregado === '' || locaisDoPhp.length > 0) {
-                    mostrarFeedback('success', `${locaisDoPhp.length} locais atualizados`);
+                // Mostra feedback apenas se for primeira carga ou verificação manual
+                if (isManualCheck || isPrimeiraCarga) {
+                    // Se é primeira carga (hash vazio)
+                    if (isPrimeiraCarga) {
+                        mostrarFeedback('success', `${locaisDoPhp.length} locais carregados`);
+                    } else {
+                        // Se é verificação manual e houve mudanças
+                        mostrarFeedback('success', `${locaisDoPhp.length} locais atualizados`);
+                    }
                 }
+                
+                // Atualiza o hash por último
+                ultimoHashCarregado = novoHash;
                 return true;
             } else {
+                console.log(`✅ Nenhuma mudança detectada - Hash: ${novoHash}`);
                 // Só mostra se for verificação manual
                 if (isManualCheck) {
                     mostrarFeedback('success', 'Sistema atualizado');
